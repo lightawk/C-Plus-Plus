@@ -2,13 +2,7 @@
 #include <iostream>
 
 class Television {
-
-private:
-    int chaine;
-    bool estAllume;
-    std::string marque;
-    int volume;
-
+    
 public:
     void Allumer();
     void Eteindre();
@@ -17,4 +11,10 @@ public:
     int GetVolume();
     // Constructeur
     Television(std::string marque);
+
+private:
+    int chaine;
+    bool estAllume;
+    std::string marque;
+    int volume;
 };

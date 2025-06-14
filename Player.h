@@ -3,11 +3,6 @@
 
 class Player {
 
-private:
-    std::string m_Name;
-    int m_HitPoints;
-    int m_Damages;
-
 public:
     Player();
     Player(const Player& player);
@@ -23,4 +18,9 @@ public:
     int GetDommages() const;
 
     void setDamages(int damages);
+
+private:
+    std::string m_Name;
+    int m_HitPoints;
+    int m_Damages;
 };

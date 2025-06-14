@@ -1,14 +1,14 @@
 #include <Player.h>
 
+// Constructeurs
 Player::Player() {}
 Player::Player(const Player& player) {
-
 }
 Player::Player(const std::string& name, int points, int dommages) {
-
 }
 
-//~Player() {}
+// Destructeur
+Player::~Player() {}
 
 bool Player::isDead() {
     return m_HitPoints <= 0;
